@@ -7,10 +7,35 @@
     <title>Password Generator</title>
 </head>
 <body>
-    
 
+    <div class="box">
+        <div class="boxTop">
+            <h1 style="color: white;">
+                Password Generator
+            </h1>
+            <div class="passwordGenerate">
+                <input type="text" id="generated-password">
+            </div>
+        </div>
 
-
+        <div class="boxContainer">
+            <div class="BoxContainerLeft">
+                <p>Password length</p>
+                <p>Include uppercase letters</p>
+                <p>Include lowercase letters</p>
+                <p>Include numbers</p>
+                <p>Include symbols</p>
+            </div>
+            <div class="boxContainerRight">
+                <input type="number" id="password-length" min="4" value="20" style="margin-top: 16px; margin-bottom: 16px;">
+                <input type="checkbox" id="uppercase-checkbox" style="margin-bottom: 16px;">
+                <input type="checkbox" id="lowercase-checkbox" style="margin-bottom: 16px;">
+                <input type="checkbox" id="numbers-checkbox" style="margin-bottom: 16px;">
+                <input type="checkbox" id="symbols-checkbox" style="margin-bottom: 16px;">
+            </div>
+        </div>
+        <button>Generate Password</button>
+    </div>
 
     <script src="./public/js/main.js"></script>
 </body>
